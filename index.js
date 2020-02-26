@@ -9,7 +9,7 @@ var isReady = true;
 
 const prefix = '!';
 
-bot.login('NjgxNDIyNzQ4OTAzNjY5ODUx.XlUmfg.UvWI4gjEPlCewD2j7Yc5_9KIGUc');
+bot.login('NjgxNDIyNzQ4OTAzNjY5ODUx.XlY5RA.1GJxGLKc9eKX1X7_jAdHYPrVpEc');
 
 /*
 
@@ -55,7 +55,7 @@ bot.on('message', msg => {
 bot.on('message', msg => {
     if(msg.content === prefix + 'bestgrill') {
         let grills = ['Junko', 'Kyoko', 'Celeste', 'Sayaka', 'Mukuro', 'Hina', 'Komaru', 'Peko', 'Sakura', 'Sonia', 'Toko', 'Akane', 'Chiaki', 'Hiyoko', 'Ibuki', 'Mahiru', 'Mikan', 'Kaede', 'Angie', 'Himiko', 'Kirumi', 'Maki', 'Miu', 'Tenko', 'Tsumugi'];
-        let rand = _.random(0,24);
+        let rand = _.random(0, grills.length-1);
         msg.reply(grills[rand]);
     }
 });
