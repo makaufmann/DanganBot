@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Monodam",
+        "pic": "./images/characters/other/monodam.png"
+    },
+    {
+        "name": "Monophanie",
+        "pic": "./images/characters/other/monophanie.png"
+    },
+    {
+        "name": "Monokid",
+        "pic": "./images/characters/other/monokid.png"
+    },
+    {
+        "name": "Monosuke",
+        "pic": "./images/characters/other/monosuke.png"
+    },
+    {
+        "name": "Monotaro",
+        "pic": "./images/characters/other/monotaro.png"
+    }
+]
