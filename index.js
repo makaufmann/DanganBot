@@ -15,10 +15,8 @@ bot.login('');
 
 ___________________COMMAND-TEMPALTE
 
-bot.on('message', msg => {
     if(msg.content === prefix + 'commandname') {
     }
-});
 
 */
 
@@ -34,7 +32,7 @@ bot.on('message', msg => {
 
     if(msg.content === prefix + 'help') {
         msg.channel.send('Hello! My name is DanganBot.\n My current version is V0.1\n I am currently able to react to the following commands:')
-        msg.channel.send('!theme => joins the commands user and plays the Danganronpa theme\n!ping => responds with a secret message\n!random => responds wit your personal Despair-Number\n!bestgrill => responds with a random girl from the Danganronpa cast\n!monokuma => responds with Monokuma\n!monokub => responds with a random Monokub\n!time => responds with the current time\n!quote => responds with a random Danganronpa quote\n!meme => responds with a random Danganronpa meme')
+        msg.channel.send('!theme => joins the commands user and plays the Danganronpa theme\n!ping => responds with a secret message\n!random => responds wit your personal Despair-Number\n!bestgrill => responds with a random girl from the Danganronpa cast\n!monokuma => responds with Monokuma\n!monokub => responds with a random Monokub\n!time => responds with the current time\n!quote => responds with a random Danganronpa quote\n!meme => responds with a random Danganronpa meme\n!hentai => sends you a random hentai owo\n!murder => a random castmember will murder another random castmemeber with a random weapon and Makoto will say something stupid and dumb')
         
         }
 
@@ -45,9 +43,12 @@ bot.on('message', msg => {
     }
 
     if(msg.content === prefix + 'bestgrill') {
-        let grills = ['Junko', 'Kyoko', 'Celeste', 'Sayaka', 'Mukuro', 'Hina', 'Komaru', 'Peko', 'Sakura', 'Sonia', 'Toko', 'Akane', 'Chiaki', 'Hiyoko', 'Ibuki', 'Mahiru', 'Mikan', 'Kaede', 'Angie', 'Himiko', 'Kirumi', 'Maki', 'Miu', 'Tenko', 'Tsumugi'];
+        let rawdata = fs.readFileSync('./jsons/fcharacters.json');
+        let grills = JSON.parse(rawdata);
         let rand = _.random(0, grills.length-1);
-        msg.reply(grills[rand]);
+        msg.reply(grills[rand].name, {
+            file: grills[rand].pic
+        });
     }
 
     if(msg.content === prefix + 'monokuma') {
@@ -113,4 +114,27 @@ bot.on('message', msg => {
     if(msg.content === 'Mein Sohn' && msg.author.username === 'GudShot') {
         msg.reply('Father <3');
     }
+
+    if(msg.content === prefix + 'hentai') {
+        let rand = _.random(1, 303102);
+        msg.channel.send('https://www.nhentai.net/g/' + rand + '/');
+    }
+
+    if(msg.content === prefix + 'murder') {
+        let rawcast = fs.readFileSync('./jsons/killing_game/cast.json');
+        let cast = JSON.parse(rawcast);
+
+        let rawweapons = fs.readFileSync('./jsons/killing_game/weapons.json');
+        let weapons = JSON.parse(rawweapons);
+
+        let randv = _.random(0, cast.length - 1);
+        let randc = _.random(0, cast.length - 1);
+        let randw = _.random(0, weapons.length - 1);
+
+        msg.channel.send(cast[randv].name + ' was killed by ' + cast[randc].name + ' with/by ' + weapons[randw].name);
+
+        msg.channel.send('There is no way another murder would happen. Right?\n-Makoto');
+    }
+
+
 });

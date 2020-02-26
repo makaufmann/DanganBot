@@ -1,13 +1,126 @@
 [
 {
     "name": "Kyoko",
-    "pic": "./images/characters/females/dr1"
+    "pic": "./images/characters/females/dr1/kyoko.png"
 },
 
 {
-    "name": "",
-    "pic": ""
+    "name": "Celeste",
+    "pic": "./images/characters/females/dr1/celeste.png"
+},
+
+{
+    "name": "Hina",
+    "pic": "./images/characters/females/dr1/hina.png"
+},
+
+{
+    "name": "Junko",
+    "pic": "./images/characters/females/dr1/junko.png"
+},
+
+{
+    "name": "Mukuro",
+    "pic": "./images/characters/females/dr1/mukuro.png"
+},
+
+{
+    "name": "Sakura",
+    "pic": "./images/characters/females/dr1/sakura.png"
+},
+
+{
+    "name": "Sayaka",
+    "pic": "./images/characters/females/dr1/sayaka.png"
+},
+
+{
+    "name": "Toko",
+    "pic": "./images/characters/females/dr1/toko.gif"
+},
+
+{
+    "name": "Akane",
+    "pic": "./images/characters/females/dr2/akane.png"
+},
+
+{
+    "name": "Chiaki",
+    "pic": "./images/characters/females/dr2/chiaki.png"
+},
+
+{
+    "name": "Hiyoko",
+    "pic": "./images/characters/females/dr2/hiyoko.png"
+},
+
+{
+    "name": "Ibuki",
+    "pic": "./images/characters/females/dr2/ibuki.png"
+},
+
+{
+    "name": "Mahiru",
+    "pic": "./images/characters/females/dr2/mahiru.png"
+},
+
+{
+    "name": "Mikan",
+    "pic": "./images/characters/females/dr2/mikan.png"
+},
+
+{
+    "name": "Peko",
+    "pic": "./images/characters/females/dr2/peko.png"
+},
+
+{
+    "name": "Sonia",
+    "pic": "./images/characters/females/dr2/sonia.png"
+},
+
+{
+    "name": "Angie",
+    "pic": "./images/characters/females/dr3/angie.png"
+},
+
+{
+    "name": "Himiko",
+    "pic": "./images/characters/females/dr3/himiko.png"
+},
+
+{
+    "name": "Kaede",
+    "pic": "./images/characters/females/dr3/kaede.png"
+},
+
+{
+    "name": "Kirumi",
+    "pic": "./images/characters/females/dr3/kirumi.png"
+},
+
+{
+    "name": "Maki",
+    "pic": "./images/characters/females/dr3/maki.png"
+},
+
+{
+    "name": "Miu",
+    "pic": "./images/characters/females/dr3/miu.png"
+},
+
+{
+    "name": "Tenko",
+    "pic": "./images/characters/females/dr3/tenko.png"
+},
+
+{
+    "name": "Tsumugi",
+    "pic": "./images/characters/females/dr3/tsumugi.png"
+},
+
+{
+    "name": "Komaru",
+    "pic": "./images/characters/females/komaru.png"
 }
-
-
 ]
