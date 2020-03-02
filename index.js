@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 const path = require('path');
-const token = 'NjgxNDIyNzQ4OTAzNjY5ODUx.XlbIRg.fak719L_VKgDR2-4hHmHxHfty8E';
+const token = '';
 
 const client = new Commando.Client({
     owner: '',
