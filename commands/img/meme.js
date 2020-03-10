@@ -19,14 +19,10 @@ class memeCommand extends Command{
     }
 
     run(msg){
-        let rawmemes = fs.readFileSync('./jsons/memes.json');
-        let memes = JSON.parse(rawmemes);
-        let rand = _.random(0, memes.length - 1);
-        console.log(rand);
-        console.log(memes[rand]);
-
+        let rand = _.random(1, 66);
+        
         return msg.channel.send({
-            file: memes[rand].file
+            file: './images/memes/meme_' + rand + '.png'
         });
     }
 

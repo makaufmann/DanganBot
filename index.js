@@ -14,7 +14,8 @@ client.registry.registerDefaults().registerGroups([
     ['img', 'Images'],
     ['random', 'Random'],
     ['sound', 'Sound'],
-    ['nsfw', 'NSFW']
+    ['nsfw', 'NSFW'],
+    ['games', 'Games']
 ]).registerCommandsIn(path.join(__dirname,"commands"));
 
 client.on('ready' ,() =>{
