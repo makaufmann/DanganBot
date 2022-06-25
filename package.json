@@ -14,7 +14,7 @@
     "ffmpeg": "0.0.4",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "opusscript": "0.0.7",
     "sqlite": "^3.0.3"
   }
